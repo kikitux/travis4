@@ -1,5 +1,5 @@
 #display hello
 
-echo hello
+echo bye
 
 
