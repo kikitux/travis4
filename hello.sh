@@ -1,4 +1,4 @@
 #display hello
 
-echo world
+echo hello
 
