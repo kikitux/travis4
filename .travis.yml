@@ -3,3 +3,13 @@ dist: xenial
 sudo: required
 script:
 - bash test.sh
+
+deploy:
+  provider: releases
+  api_key:
+  secure: TWKlZOI3ieZPchm8Hl72LA
+  file: hello.sh
+  skip_cleanup: true
+  on:
+  repo: nikcbg/travis4
+    tags: true
