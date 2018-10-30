@@ -1,3 +1,2 @@
-echo bye
-
+echo hello
 
