@@ -4,3 +4,12 @@ sudo: required
 script:
 - bash test.sh
 
+
+deploy:
+  provider: releases
+  api_key:
+    secure: u5frNnxbG8A7c4hdsu3eOY0acwIjem5o6EgmorW22aoiqUgs6aTI91Fy0wpviPnJG9BvszStTOZ7a+Czq1ZIR3Z2gaMK9XjyInusq1DqM+r2nHTkiKFvx4nKuNe8vRnKwSo3kQR5nU2ywE38gf2JL7uGsrG1N91/JbkSxmi+6Ntt6rpzuFlJyDALzZw0TVHI/PcYTTRyZegDsROssRBM7v/F9j9dyRklEXG6JQMwXuqMuxphFYcjqtQwToaNp4jAPaAGkDzhs1VUg9r2l4ujEHwQiu6khAstgzB2BfcMbS818Ed4sBnMqN3sVCvw6juD/JSphtLaqL7vLUG97mfKCF1mE/CCYY5ixLixlbrfWZBG9he7kviQPLBloCF95Fx9vXHQzeI3WAIXhI6/5jsEv3Vih8lTzqkZ6stmoL8xFGaVRu1cUOvbM857R+nc/hjUrBRRPERAGjjshFk7hpfKma9km7ZCIvykR/Satm4AK8ByVgSpUV29Zjrs+hY93wuz1NrN7BwK827GHFqNZaWG3k8u1fmPbKZ+i1F+ihcfLMHEf2TiRh30p0lKeRTAgrBrV3pLP26Kh3GveanozBGsRO4Ltskrx3xSVu6TLtTPKGktVwG5FLMaoU5eX8GSTprSU9rCm7gs44BrBKSFrDfJ9f2bJYPN65Crxpx45KpznXc=
+  file: hello.sh
+  on:
+    repo: nikcbg/travis4
+    branch: newbranch2
