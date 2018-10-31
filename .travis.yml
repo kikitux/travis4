@@ -4,7 +4,7 @@ sudo: required
 script:
 - bash test.sh
 
-
+ 
 
 deploy:
   provider: releases
@@ -13,5 +13,5 @@ deploy:
   file: hello.sh
   on:
     repo: nikcbg/travis4
-    tags: true 
+    tags: true
 
